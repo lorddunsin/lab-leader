@@ -1,5 +1,6 @@
 
 
+
 import React, { useState } from 'react'
 
 const links = [
@@ -13,26 +14,21 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav
-      className="
-      
-        w-full
-        bg-white
-        px-6 md:px-30 py-10
-      "
-    >
+    <nav className="w-full bg-white px-4 sm:px-8 lg:px-20 py-4 shadow-sm sticky top-0 z-50">
+
       {/* Top bar */}
-      <div className="flex items-center justify-between h-20">
-        
+      <div className="flex items-center justify-between">
+
         {/* Logo */}
         <img
-          src="/logo2.png"
+          src="/logo.png"
           alt="Logo"
-          className="w-32 md:w-40 cursor-pointer"
+          className="w-28 sm:w-32 md:w-36 cursor-pointer"
         />
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-10 text-2xl font-medium text-gray-700">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-10 text-base lg:text-lg font-medium text-gray-700">
+
           {links.map((item) => (
             <li key={item.text} className="relative group">
               <a
@@ -46,18 +42,9 @@ function Navbar() {
             </li>
           ))}
 
+          {/* Button */}
           <li>
-            <button
-              className="
-                relative overflow-hidden
-                bg-[#49c1ef] 
-                px-10 py-5 
-                font-bold
-                transition-all duration-300
-                hover:scale-105 hover:shadow-lg
-                active:scale-95
-              "
-            >
+            <button className="bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-bold text-[#1a193a] rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
               Nominate
             </button>
           </li>
@@ -65,7 +52,7 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl"
+          className="md:hidden text-2xl"
           onClick={() => setOpen(!open)}
         >
           ☰
@@ -74,32 +61,29 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <ul className="md:hidden flex flex-col gap-6 pb-6 text-lg font-medium text-gray-700">
-          {links.map((item) => (
-            <li key={item.text}>
-              <a
-                href={item.link}
-                className="block hover:text-[#1c94fc]"
-                onClick={() => setOpen(false)}
-              >
-                {item.text}
-              </a>
-            </li>
-          ))}
+        <div className="md:hidden mt-4 bg-white shadow-lg rounded-xl p-6">
+          <ul className="flex flex-col gap-5 text-base font-medium text-gray-700">
 
-          <li>
-            <button
-              className="
-                w-full bg-[#1c94fc] text-white
-                py-3 rounded-full font-semibold
-                transition-all duration-300
-                hover:shadow-lg
-              "
-            >
-              Contact
-            </button>
-          </li>
-        </ul>
+            {links.map((item) => (
+              <li key={item.text}>
+                <a
+                  href={item.link}
+                  className="block hover:text-[#1c94fc]"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
+
+            <li>
+              <button className="w-full bg-[#49c1ef] text-[#1a193a] py-3 rounded-md font-semibold transition-all duration-300 hover:shadow-lg">
+                Nominate
+              </button>
+            </li>
+
+          </ul>
+        </div>
       )}
     </nav>
   )

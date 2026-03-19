@@ -1,6 +1,5 @@
 
 
-
 import React from 'react'
 import { FaEye } from 'react-icons/fa6'
 import { FiTarget } from 'react-icons/fi'
@@ -21,7 +20,7 @@ const cardVariants = {
 
 function Mission() {
   return (
-    <section className="flex flex-col w-full  py-20 space-y-20">
+    <section className="flex flex-col w-full  space-y-20">
       
       {/* Heading */}
       <motion.div
@@ -69,65 +68,63 @@ function Mission() {
         </div>
       </motion.div>
 
-      {/* Vision & Mission Section */}
-      <section className="bg-[#f3f3f5] w-full py-20 px-5 md:px-20 text-center">
-        <motion.h1
-                         initial={{ opacity: 0, y: 40 }}
-                         whileInView={{ opacity: 1, y: 0 }}
-                         viewport={{ once: true }}
-                         transition={{ duration: 0.7, delay: 0.15 }}
-                         id='mission'
-                          className="text-4xl md:text-5xl font-bold text-[#1a193a] tracking-wide">
-          Our Vision & Mission
+        <section className="relative bg-[url('/img2.jpg')] pb-40 pt-30 bg-cover bg-center bg-no-repeat min-h-[60vh] sm:min-h-[70vh] px-4 sm:px-8 lg:px-16 py-12 w-full ">
+        <div className="absolute inset-0 bg-black/70"></div>
+
+<div className='z-10 w-full flex flex-col text-white'>
+  <motion.h1
+                           initial={{ opacity: 0, y: 50 }}
+                           whileInView={{ opacity: 1, y: 0 }}
+                           viewport={{ once: true }}
+                           transition={{ duration: 0.7, ease: 'easeOut' }}  className="text-4xl md:text-5xl z-10  font-bold flex self-center tracking-wide"
+                           >
+          Vision & Mission
         </motion.h1>
 
-        <div className=" gap-10 px-30 items-center justify-center flex ">
-          {/* Vision Card */}
-          <motion.div
-            custom={0}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            whileHover={{ y: -10, scale: 1.03 }}
-            className=" border border-[#4ac2f0] rounded-full flex flex-col p-8 text-center items-center justify-center space-y-6 mr-[-100px] shadow-lg hover:shadow-2xl transition-transform duration-300  w-150 h-150"
-          >
-            <div className="mx-auto w-fit text-white bg-gradient-to-br from-[#4ac2f0] to-[#1c94fc] p-5 rounded-2xl text-3xl shadow-md">
-              <FaEye />
-            </div>
 
-            <h2 className="text-2xl font-bold text-[#1c94fc] ">Our Vision</h2>
+<motion.div
+ initial={{ opacity: 0, y: 50 }}
+                           whileInView={{ opacity: 1, y: 0 }}
+                           viewport={{ once: true }}
+                           transition={{ duration: 0.7, ease: 'easeOut' }} className="mt-8   font-medium z-10  text-lg md:text-xl flex flex-col self-start w-150 mt-50 seft-start  justify-left bg-white/20 backdrop-blur-md p-6 rounded-lg text-white">
 
-            <p className="text-gray-700 font-light text-base md:text-xl space-y-3 font-medium  text-center mx-auto p-10">
-              To become a globally respected digital honor for product leadership, recognizing pioneers whose work improves lives across borders.
-            </p>
-          </motion.div>
+  <h1  className="text-4xl md:text-5xl font-bold flex mb-5  tracking-wide"
+                           >
+          Vision
+        </h1>
+<p className='leading-10'>
 
-          {/* Mission Card */}
-          <motion.div
-            custom={1}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            whileHover={{ y: -10, scale: 1.03 }}
-            className="border border-[#4ac2f0] rounded-full p-10 text-center  flex flex-col items-center space-y-6 w-150 h-150 mt-70 shadow-lg hover:shadow-2xl transition-transform duration-300"
-          >
-            <div className="mx-auto w-fit text-white bg-gradient-to-br from-[#4ac2f0] to-[#1c94fc] p-5 rounded-2xl text-3xl shadow-md">
-              <FiTarget />
-            </div>
+To become a globally respected digital honor for product leadership, recognizing pioneers 
+whose work improves lives across borders. 
 
-            <h2 className="text-2xl font-bold text-[#1c94fc]">Our Mission</h2>
+</p>
+         
+        </motion.div>
 
-            <ul className="text-gray-700 font-light text-base md:text-xl font-medium space-y-3 text-center mx-auto p-10">
-              <li> <strong>Celebrate:</strong> To honor visionary leaders shaping the future of products.</li>
-              <li><strong>Promote:</strong> To champion innovation, integrity, and global collaboration.</li>
-              <li> <strong>Inspire:</strong> To provide a platform that ignites the next generation of creators.</li>
-              <li><strong>Spotlight:</strong> To highlight leadership that balances growth with responsibility.</li>
-            </ul>
-          </motion.div>
-        </div>
-      </section>
+<motion.div
+ initial={{ opacity: 0, y: 50 }}
+ whileInView={{ opacity: 1, y: 0 }}
+ viewport={{ once: true }}
+ transition={{ duration: 0.7, ease: 'easeOut' }} className="mt-8 z-10  flex  flex-col self-end font-medium text-lg md:text-xl w-150  bg-white/20 backdrop-blur-md p-6 rounded-lg text-white">
+
+  <h1  className="text-4xl md:text-5xl font-bold flex mb-5  tracking-wide"
+                           >
+         Mission 
+        </h1>
+<p className='leading-10'>
+Celebrate: To honor visionary leaders shaping the future of products. 
+Promote: To champion innovation, integrity, and global collaboration. 
+Inspire: To provide a platform that ignites the next generation of creators. 
+Spotlight: To highlight leadership that balances growth with responsibility.
+
+</p>
+         
+        </motion.div>
+                             </div>
+
+
+        </section>
+      
     </section>
   )
 }
