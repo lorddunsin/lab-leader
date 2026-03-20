@@ -14,7 +14,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="w-full bg-white px-4 sm:px-8 lg:px-20 py-4 shadow-sm sticky top-0 z-50">
+    <nav className="w-full bg-white px-10 sm:px-8 lg:px-20 py-10 shadow-sm sticky top-0 z-50">
 
       {/* Top bar */}
       <div className="flex items-center justify-between">
@@ -23,7 +23,7 @@ function Navbar() {
         <img
           src="/logo.png"
           alt="Logo"
-          className="w-28 sm:w-32 md:w-36 cursor-pointer"
+          className="w-30 sm:w-40 md:w-50 cursor-pointer"
         />
 
         {/* Desktop Nav */}
@@ -44,7 +44,7 @@ function Navbar() {
 
           {/* Button */}
           <li>
-            <button className="bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-bold text-[#1a193a] rounded-md transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
+            <button className="bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-4 text-sm lg:text-base font-bold text-[#1a193a]  transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
               Nominate
             </button>
           </li>
@@ -77,7 +77,7 @@ function Navbar() {
             ))}
 
             <li>
-              <button className="w-full bg-[#49c1ef] text-[#1a193a] py-3 rounded-md font-semibold transition-all duration-300 hover:shadow-lg">
+              <button className="w-full bg-[#49c1ef] text-[#1a193a] py-3 font-semibold transition-all duration-300 hover:shadow-lg">
                 Nominate
               </button>
             </li>

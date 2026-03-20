@@ -21,7 +21,7 @@ const cardVariants = {
 
 function Mission() {
   return (
-    <section className="flex flex-col w-full space-y-20">
+    <section className="flex flex-col w-full bg-gray-100 py-40 px-5 md:1px-0 lg:px-20 space-y-20">
 
       {/* Heading */}
       <motion.div
@@ -45,7 +45,7 @@ function Mission() {
           A Digital Legacy of Innovation
         </span>
 
-        <div className="mt-6 space-y-4 max-w-4xl mx-auto text-gray-700 font-medium text-sm sm:text-base md:text-lg">
+        <div className="mt-6 space-y-4 mb- max-w-4xl mx-auto text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-center">
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -74,57 +74,32 @@ function Mission() {
       </motion.div>
 
       {/* Vision & Mission Section */}
-      <section className="relative bg-[url('/img2.jpg')] min-h-[60vh] sm:min-h-[70vh] bg-cover bg-center bg-no-repeat px-4 sm:px-8 lg:px-16 py-12 w-full">
-        <div className="absolute inset-0 bg-black/70"></div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20'
+        >
 
-        <div className='relative z-10 flex flex-col text-white space-y-8'>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="text-3xl sm:text-4xl md:text-5xl font-bold self-center tracking-wide"
-          >
-            Vision & Mission
-          </motion.h1>
+<div className='bg-white shadow-md'>
+  <h1  className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a193a] tracking-wide bg-[#42b59d] p-10">Our Vision</h1>
+  <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>To become a globally respected digital honor for product leadership, recognizing pioneers 
+whose work improves lives across borders.</p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="mt-4 font-medium text-sm sm:text-base md:text-lg w-full max-w-md sm:max-w-lg bg-white/20 backdrop-blur-md p-6 rounded-lg"
-          >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 tracking-wide">
-              Vision
-            </h2>
-            <p className='leading-6 sm:leading-8'>
-              To become a globally respected digital honor for product leadership, recognizing pioneers 
-              whose work improves lives across borders.
-            </p>
-          </motion.div>
+</div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="mt-4 font-medium text-sm sm:text-base md:text-lg w-full max-w-md sm:max-w-lg self-end bg-white/20 backdrop-blur-md p-6 rounded-lg"
-          >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 tracking-wide">
-              Mission
-            </h2>
-            <p className='leading-6 sm:leading-8'>
-              Celebrate: To honor visionary leaders shaping the future of products. <br/>
-              Promote: To champion innovation, integrity, and global collaboration. <br/>
-              Inspire: To provide a platform that ignites the next generation of creators. <br/>
-              Spotlight: To highlight leadership that balances growth with responsibility.
-            </p>
-          </motion.div>
+<div className='bg-white shadow-md'>
+  <h1  className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-wide bg-[#1a193a] p-10">Our Mission </h1>
+   <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>Celebrate: To honor visionary leaders shaping the future of products. 
+Promote: To champion innovation, integrity, and global collaboration. 
+Inspire: To provide a platform that ignites the next generation of creators. 
+Spotlight: To highlight leadership that balances growth with responsibility.</p>
 
-        </div>
-      </section>
+</div>
+
+      </motion.div>
 
     </section>
   )

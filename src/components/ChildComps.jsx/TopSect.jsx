@@ -69,9 +69,9 @@ function TopSect() {
       </section>
 
       {/* RIGHT SIDE */}
-      <section className="bg-[#4ac2f0] min-h-[300px] lg:min-h-full">
+      <section className="bg-[#4ac2f0] min-h-[300px] flex items-center px-20 lg:min-h-full">
          <img
-          src="/img1.png"
+          src="/bgimg4.png"
           alt="Logo"
           // className="w-28 sm:w-32 md:w-36 cursor-pointer"
         />
