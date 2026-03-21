@@ -32,7 +32,7 @@ function Categories() {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
         id="categories"
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1a193a] text-center font-bold px-4"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1a193a] text-center font-semibold px-4"
       >
         Recognition Categories
       </motion.h1>
@@ -48,7 +48,7 @@ function Categories() {
       </motion.p>
 
       {/* ================= CATEGORY CARDS ================= */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 mt-20 mb-16">
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 mt-20 mb-50">
 
         {[
           { image:<img src="bgimg2.png" alt="" className='w-100'/> ,
@@ -77,7 +77,7 @@ function Categories() {
            {item.image}
             </div>
 
-            <h1 className="text-lg sm:text-xl md:text-4xl p-5 font-bold">
+            <h1 className="text-lg sm:text-xl md:text-4xl p-5 font-semibold">
               {item.title}
             </h1>
 
@@ -90,19 +90,20 @@ function Categories() {
       </section>
 
       {/* ================= EVALUATION ================= */}
-      <section id="evaluation" className="bg-white py-16 sm:py-20 flex flex-col items-center">
+      <section id="evaluation" className="grid  bg-gray-100 grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 py-30 mt-10 w-full">
+<div className="col-span-2">
 
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1a193a] text-center font-bold px-4"
-        >
+          className="text-3xl sm:text-4xl flex flex-col justify-center items-center md:text-5xl lg:text-6xl text-[#1a193a] text-center font-semibold "
+          >
           Selection & Evaluation
         </motion.h1>
 
-        <span className="mt-4 text-sm sm:text-base md:text-lg bg-[#f3f3f5] px-4 py-2 rounded-full text-[#1a193a] font-light text-center">
+        <span className="mt-4 flex self-center justify-center text-sm sm:text-base md:text-lg  py-2 rounded-full text-[#1a193a] font-light text-center">
           A Merit-Based Digital Spotlight.
         </span>
 
@@ -111,13 +112,14 @@ function Categories() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="text-sm sm:text-base md:text-lg text-[#1a193a] text-center mt-4 px-4 max-w-3xl font-medium"
-        >
+          className="text-sm sm:text-xl md:text-2xl text-[#1a193a] text-center mt-4 px-4 max-w-3xl "
+          >
           Our recognition process is transparent and independent, focusing on four key pillars:
         </motion.p>
+          </div>
 
         {/* Evaluation Cards */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 mt-10 w-full">
+        <section className="grid grid-cols-1 sm:grid-cols-2 col-span-3  px-4 sm:px-8 lg:px-5">
 
           {[
             { title: "Industry Impact (40%)", desc: "Proven leadership and measurable market change" },
@@ -125,24 +127,18 @@ function Categories() {
             { title: "Governance & Ethics (20%)", desc: "Responsible leadership practices" },
             { title: "Global Reach (10%)", desc: "Cross-border influence and sustainability" },
           ].map((item, i) => (
-            <motion.div
-              key={i}
-              custom={i}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              whileHover={{ y: -10, scale: 1.03 }}
-              className="flex flex-col rounded-xl p-5 sm:p-6 text-center text-[#1a193a] space-y-3 shadow-lg hover:shadow-2xl transition bg-white"
+            <div
+              
+              className="flex flex-col  p-5 sm:p-4 text-center text-[#1a193a] space-y-3 shadow-lg  transition bg-white border border-gray-200  "
             >
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
+              <h1 className="text-lg sm:text-2xl mb-10 md:text-4xl font-semibold">
                 {item.title}
               </h1>
 
-              <p className="text-sm sm:text-base md:text-lg">
+              <p className="text-md sm:text-lg md:text-2xl">
                 {item.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
 
         </section>
@@ -150,19 +146,19 @@ function Categories() {
       </section>
 
       {/* ================= COMMUNITY ================= */}
-      <div className="relative bg-[url('/city.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-end min-h-[60vh] sm:min-h-[70vh] px-4 sm:px-8 lg:px-16 py-12">
+      <div className="relative bg-[url('/community.webp')] bg-cover bg-center bg-no-repeat flex items-center justify-end min-h-[60vh] sm:min-h-[90vh] px-4 sm:px-8 lg:px-16 py-12">
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70"></div>
+        {/* <div className="absolute inset-0 bg-black/70"></div> */}
 
-        <div className="relative z-10 text-[#1a193a] p-10 max-w-3xl w-full bg-white flex flex-col  ">
+        <div className="relative z-10 text-[#1a193a] p-20 max-w-3xl w-full bg-white flex flex-col  ">
 
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-2xl sm:text-3xl md:text-4xl mb-5 lg:text-6xl font-bold"
+            className="text-2xl sm:text-3xl md:text-4xl mb-5 lg:text-6xl font-semibold"
           >
             Community & Engagement
           </motion.h1>
