@@ -19,7 +19,7 @@ function TopSect() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-left"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-left"
           >
             Honoring Product Excellence in the Digital Age
           </motion.h1>

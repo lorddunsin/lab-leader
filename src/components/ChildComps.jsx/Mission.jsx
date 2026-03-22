@@ -37,7 +37,7 @@ function Mission() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a193a] tracking-wide"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide"
         >
           About the Recognition
         </motion.h1>
@@ -84,14 +84,14 @@ function Mission() {
 
 
 <div className='bg-white shadow-md'>
-  <h1  className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a193a] tracking-wide bg-[#42b59d] p-10">Our Vision</h1>
+  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide bg-[#42b59d] p-7">Our Vision</h1>
   <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>To become a globally respected digital honor for product leadership, recognizing pioneers 
 whose work improves lives across borders.</p>
 
 </div>
 
 <div className='bg-white shadow-md'>
-  <h1  className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-wide bg-[#1a193a] p-10">Our Mission </h1>
+  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide bg-[#1a193a] p-7">Our Mission </h1>
    <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>Celebrate: To honor visionary leaders shaping the future of products. 
 Promote: To champion innovation, integrity, and global collaboration. 
 Inspire: To provide a platform that ignites the next generation of creators. 

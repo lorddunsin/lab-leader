@@ -14,7 +14,7 @@ function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="w-full bg-white px-10 sm:px-8 lg:px-20 py-10 shadow-sm sticky top-0 z-50">
+    <nav className="w-full bg-white px-10 sm:px-8 lg:px-20 py-5 shadow-sm sticky top-0 z-50">
 
       {/* Top bar */}
       <div className="flex items-center justify-between">

@@ -32,7 +32,7 @@ function Categories() {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
         id="categories"
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1a193a] text-center font-semibold px-4"
+        className="text-2xl md:text-3xl lg:text-4xl text-[#1a193a] text-center font-semibold px-4"
       >
         Recognition Categories
       </motion.h1>
@@ -48,7 +48,7 @@ function Categories() {
       </motion.p>
 
       {/* ================= CATEGORY CARDS ================= */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 mt-20 mb-50">
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 mt-20 mb-30">
 
         {[
           { image:<img src="bgimg2.png" alt="" className='w-100'/> ,
@@ -72,18 +72,21 @@ function Categories() {
           >
            <div
   style={{ backgroundColor: item.bg }}
-  className="w-full sm:h-50 md:h-70 lg:h-80 flex items-center justify-center text-2xl text-[#1a193a]"
+  className="w-full sm:h-50 md:h-70  flex items-center justify-center text-2xl text-[#1a193a]"
 >
            {item.image}
             </div>
 
-            <h1 className="text-lg sm:text-xl md:text-4xl p-5 font-semibold">
+
+
+            <h1 className="text-lg sm:text-xl px-5 md:text-2xl  font-semibold">
               {item.title}
             </h1>
 
-            <p className="text-md sm:text-lg p-5 md:text-xl">
+            <p className="text-md  sm:text-lg px-5 mt-2 mb-10  md:text-xl">
               {item.desc}
             </p>
+
           </motion.div>
         ))}
 
@@ -98,7 +101,7 @@ function Categories() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-3xl sm:text-4xl flex flex-col justify-center items-center md:text-5xl lg:text-6xl text-[#1a193a] text-center font-semibold "
+          className="text-2xl flex flex-col justify-center items-center md:text-3xl lg:text-4xl text-[#1a193a] text-center font-semibold "
           >
           Selection & Evaluation
         </motion.h1>
@@ -131,11 +134,11 @@ function Categories() {
               
               className="flex flex-col  p-5 sm:p-4 text-center text-[#1a193a] space-y-3 shadow-lg  transition bg-white border border-gray-200  "
             >
-              <h1 className="text-lg sm:text-2xl mb-10 md:text-4xl font-semibold">
+              <h1 className="text-lg sm:text-xl mb-10 md:text-2xl font-semibold">
                 {item.title}
               </h1>
 
-              <p className="text-md sm:text-lg md:text-2xl">
+              <p className="text-md sm:text-lg md:text-xl">
                 {item.desc}
               </p>
             </div>
@@ -151,14 +154,14 @@ function Categories() {
         {/* Overlay */}
         {/* <div className="absolute inset-0 bg-black/70"></div> */}
 
-        <div className="relative z-10 text-[#1a193a] p-20 max-w-3xl w-full bg-white flex flex-col  ">
+        <div className="relative z-10 text-[#1a193a]  p-10 max-w-3xl w-150 bg-white flex flex-col  ">
 
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-2xl sm:text-3xl md:text-4xl mb-5 lg:text-6xl font-semibold"
+            className="text-2xl md:text-3xl mb-5 lg:text-4xl font-semibold"
           >
             Community & Engagement
           </motion.h1>
@@ -168,7 +171,7 @@ function Categories() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="text-sm sm:text-md md:text-xl lg:text-2xl mt-4 font-medium leading-relaxed"
+            className="text-sm sm:text-md lg:text-xl mt-4 font-medium leading-relaxed"
           >
             A Platform for Influence. The Lab Leader is more than a mention; it is a gateway to a professional ecosystem:
             Global Recognition backed by a credible evaluation process, an elite network of pioneers, and exclusive digital showcases.
