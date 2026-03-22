@@ -10,8 +10,8 @@ function TopSect() {
     <main className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
       
       {/* LEFT SIDE */}
-      <section className="bg-[#1a193a] py-16 sm:py-20 lg:py-24">
-        <div className="relative z-10 max-w-6xl mx-auto text-white px-6 sm:px-10 lg:px-16 flex flex-col justify-center gap-6 sm:gap-8">
+      <section className="bg-[#1a193a] py-10 lg:py-14">
+        <div className="relative z-10 max-w-6xl mx-auto m text-white px-6 sm:px-10 lg:px-16 flex flex-col justify-center gap-6 sm:gap-8">
 
           {/* Heading */}
           <motion.h1
@@ -49,7 +49,7 @@ function TopSect() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#49c1ef] w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-[#1a193a] shadow-md hover:shadow-xl transition"
+              className="bg-[#49c1ef] w-full sm:w-auto px-6 py-3  text-base sm:text-lg font-bold text-[#1a193a] shadow-md hover:shadow-xl transition"
             >
               Nominate
             </motion.button>
@@ -58,7 +58,7 @@ function TopSect() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border border-[#49c1ef] w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-[#49c1ef] hover:bg-[#49c1ef] hover:text-[#1a193a] transition"
+                className="border border-[#49c1ef] w-full sm:w-auto px-6 sm:px-8 py-3 text-base sm:text-lg font-bold text-[#49c1ef] hover:bg-[#49c1ef] hover:text-[#1a193a] transition"
               >
                 Learn More
               </motion.button>

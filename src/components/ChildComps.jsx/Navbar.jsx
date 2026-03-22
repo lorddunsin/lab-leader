@@ -44,7 +44,7 @@ function Navbar() {
 
           {/* Button */}
           <li>
-            <button className="bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-4 text-sm lg:text-base font-bold text-[#1a193a]  transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
+            <button className="bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-bold text-[#1a193a]  transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
               Nominate
             </button>
           </li>
