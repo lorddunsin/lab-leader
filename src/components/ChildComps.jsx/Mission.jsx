@@ -21,7 +21,11 @@ const cardVariants = {
 
 function Mission() {
   return (
-    <section className="flex flex-col w-full bg-gray-100 py-40 px-5 md:1px-0 lg:px-20 space-y-20">
+    <section 
+    style={{fontFamily: {
+  sans: ["DINPro", "sans-serif"]},
+}}
+     className="flex flex-col w-full bg-gray-100 py-10 md:py-30 px-5 md:1px-0 lg:px-20 space-y-20">
 
       {/* Heading */}
       <motion.div
@@ -39,7 +43,7 @@ function Mission() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide"
         >
-          About the Recognition
+          ABOUT THE RECOGNITION
         </motion.h1>
         <span className="mt-4 text-sm sm:text-base md:text-lg bg-[#f3f3f5] px-4 py-1 rounded-full text-[#1a193a] font-light inline-block">
           A Digital Legacy of Innovation
@@ -84,14 +88,14 @@ function Mission() {
 
 
 <div className='bg-white shadow-md'>
-  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide bg-[#42b59d] p-7">Our Vision</h1>
+  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide bg-[#42b59d] p-7">OUR VISION</h1>
   <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>To become a globally respected digital honor for product leadership, recognizing pioneers 
 whose work improves lives across borders.</p>
 
 </div>
 
 <div className='bg-white shadow-md'>
-  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide bg-[#1a193a] p-7">Our Mission </h1>
+  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide bg-[#1a193a] p-7">OUR MISSION </h1>
    <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>Celebrate: To honor visionary leaders shaping the future of products. 
 Promote: To champion innovation, integrity, and global collaboration. 
 Inspire: To provide a platform that ignites the next generation of creators. 

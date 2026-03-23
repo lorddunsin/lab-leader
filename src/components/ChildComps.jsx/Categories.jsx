@@ -23,7 +23,10 @@ const cardVariants = {
 
 function Categories() {
   return (
-    <section className=" pt-16 sm:pt-20 lg:pt-35">
+    <section style={{fontFamily: {
+  sans: ["DINPro", "sans-serif"]},
+}}
+     className=" pt-16 sm:pt-20 lg:pt-35">
 
       {/* ================= HEADER ================= */}
       <motion.h1
@@ -34,7 +37,7 @@ function Categories() {
         id="categories"
         className="text-2xl md:text-3xl lg:text-4xl text-[#1a193a] text-center font-semibold px-4"
       >
-        Recognition Categories
+        RECOGNITION CATEGORIES
       </motion.h1>
 
       <motion.p
@@ -51,14 +54,14 @@ function Categories() {
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 mt-20 mb-30">
 
         {[
-          { image:<img src="bgimg2.png" alt="" className='w-100'/> ,
+          { image:<img src="bgimg2.png" alt="" className='w-70'/> ,
             bg:"#f3c062",
-             title: "The Lab Leader of the Year", desc: "Our highest digital honor for a leader who has fundamentally reshaped a global industry"},
-          { image:<img src="bgimg1.png" alt="" className='w-100'/> ,bg:'#68c2aa', title: "Product Innovation Pioneer", desc: "Recognizing breakthrough development that has driven significant technological adoption" },
-          { image:<img src="bgimg4.png" alt="" className='w-100'/> , bg:'#6dbfde', title: "Emerging Product Pioneer", desc: "Spotlighting a rising leader demonstrating exceptional promise and early global impact" },
-          { image:<img src="bgimg3.png" alt="" className='w-100'/> , bg:'#0b0a0a',  title: "Women in Product Leadership", desc: "Celebrating a woman whose innovation has transformed industries and expanded opportunities" },
-          { image:<img src="bgimg2.png" alt="" className='w-100'/> ,bg:'#f3bf63',  title: "Public Sector & Policy Pioneer", desc: "Recognizing leadership in governance or public service that enables industry growth" },
-          { image:<img src="bgimg1.png" alt="" className='w-100'/> ,bg:'#66c1a9',  title: "Lifetime Product Excellence", desc: "A featured retrospective on a career of extraordinary contribution and enduring influence" },
+             title: "THE LAB LEADER OF THE YEAR", desc: "Our highest digital honor for a leader who has fundamentally reshaped a global industry"},
+          { image:<img src="bgimg1.png" alt="" className='w-70'/> ,bg:'#68c2aa', title: "PRODUCT INNOVATION PIONEER", desc: "Recognizing breakthrough development that has driven significant technological adoption" },
+          { image:<img src="bgimg4.png" alt="" className='w-70'/> , bg:'#6dbfde', title: "EMERGING PRODUCT PIONEER", desc: "Spotlighting a rising leader demonstrating exceptional promise and early global impact" },
+          { image:<img src="bgimg3.png" alt="" className='w-70'/> , bg:'#0b0a0a',  title: "WOMEN IN PRODUCT LEADERSHIP", desc: "Celebrating a woman whose innovation has transformed industries and expanded opportunities" },
+          { image:<img src="bgimg2.png" alt="" className='w-70'/> ,bg:'#f3bf63',  title: "PUBLIC SECTOR & POLICY PIONEER", desc: "Recognizing leadership in governance or public service that enables industry growth" },
+          { image:<img src="bgimg1.png" alt="" className='w-70'/> ,bg:'#66c1a9',  title: "LIFETIME PRODUCT EXCELLENCE", desc: "A featured retrospective on a career of extraordinary contribution and enduring influence" },
         ].map((item, i) => (
           <motion.div
             key={i}
@@ -67,8 +70,8 @@ function Categories() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            whileHover={{ y: -10, scale: 1.03 }}
-            className="flex flex-col items-start text-left   text-[#1a193a] space-y-4 shadow-lg hover:shadow-2xl transition"
+            // whileHover={{ y: -10, scale: 1.03 }}
+            className="flex flex-col items-start text-left  bg-[#f3f3f5] text-[#1a193a] space-y-4 transition"
           >
            <div
   style={{ backgroundColor: item.bg }}
@@ -93,7 +96,7 @@ function Categories() {
       </section>
 
       {/* ================= EVALUATION ================= */}
-      <section id="evaluation" className="grid  bg-gray-100 grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-20 py-30 mt-10 w-full">
+      <section id="evaluation" className="grid  bg-gray-100 grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-15 py-30 mt-10 w-full">
 <div className="col-span-2">
 
         <motion.h1
@@ -101,12 +104,12 @@ function Categories() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-2xl flex flex-col justify-center items-center md:text-3xl lg:text-4xl text-[#1a193a] text-center font-semibold "
+          className="text-2xl flex flex-col j md:text-3xl lg:text-[2.125rem] text-[#1a193a]  font-semibold "
           >
-          Selection & Evaluation
+          SELECTION & EVALUATION
         </motion.h1>
 
-        <span className="mt-4 flex self-center justify-center text-sm sm:text-base md:text-lg  py-2 rounded-full text-[#1a193a] font-light text-center">
+        <span className="mt-4 flex self-center  text-sm sm:text-base md:text-lg  py-2 rounded-full text-[#1a193a] font-light ">
           A Merit-Based Digital Spotlight.
         </span>
 
@@ -115,30 +118,30 @@ function Categories() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="text-sm sm:text-xl md:text-2xl text-[#1a193a] text-center mt-4 px-4 max-w-3xl "
+          className="text-sm sm:text-xl md:text-[ 1.125rem] text-[#1a193a] mt-4  max-w-3xl "
           >
           Our recognition process is transparent and independent, focusing on four key pillars:
         </motion.p>
           </div>
 
         {/* Evaluation Cards */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 col-span-3  px-4 sm:px-8 lg:px-5">
+        <section className="grid grid-cols-1 lg:grid-cols-2 col-span-3 ">
 
           {[
-            { title: "Industry Impact (40%)", desc: "Proven leadership and measurable market change" },
-            { title: "Innovation & Originality (30%)", desc: "Pioneering contributions and unique problem-solving" },
-            { title: "Governance & Ethics (20%)", desc: "Responsible leadership practices" },
-            { title: "Global Reach (10%)", desc: "Cross-border influence and sustainability" },
+            { title: "INDUSTRY IMPACT (40%)", desc: "Proven leadership and measurable market change" },
+            { title: "INNOVATION & ORIGINALITY (30%)", desc: "Pioneering contributions and unique problem-solving" },
+            { title: "GOVERNANCE & ETHICS (20%)", desc: "Responsible leadership practices" },
+            { title: "GLOBAL REACH (10%)", desc: "Cross-border influence and sustainability" },
           ].map((item, i) => (
             <div
               
-              className="flex flex-col  p-5 sm:p-4 text-center text-[#1a193a] space-y-3 shadow-lg  transition bg-white border border-gray-200  "
+              className="flex flex-col  pr-5 py-5 pl-15 text-[#1a193a] space-y-3 transition bg-white border-1 border-[#c6c5ce]  "
             >
-              <h1 className="text-lg sm:text-xl mb-10 md:text-2xl font-semibold">
+              <h1 className="text-lg sm:text-xl mb-10 lg:text-[1.5rem] font-semibold">
                 {item.title}
               </h1>
 
-              <p className="text-md sm:text-lg md:text-xl">
+              <p className="text-md sm:text-lg md:text-[ 1.125rem] mt-[-15px] mb-10">
                 {item.desc}
               </p>
             </div>
@@ -154,7 +157,7 @@ function Categories() {
         {/* Overlay */}
         {/* <div className="absolute inset-0 bg-black/70"></div> */}
 
-        <div className="relative z-10 text-[#1a193a]  p-10 max-w-3xl w-150 bg-white flex flex-col  ">
+        <div className="relative z-10 text-[#1a193a]  p-10 max-w-3xl  bg-white flex flex-col  ">
 
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -163,7 +166,7 @@ function Categories() {
             transition={{ duration: 0.7 }}
             className="text-2xl md:text-3xl mb-5 lg:text-4xl font-semibold"
           >
-            Community & Engagement
+            COMMUNITY & ENGAGEMENT
           </motion.h1>
 
           <motion.p
@@ -171,7 +174,7 @@ function Categories() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="text-sm sm:text-md lg:text-xl mt-4 font-medium leading-relaxed"
+            className="text-sm sm:text-md lg:text-xl mt-4 font-medium lg:w-130 leading-relaxed"
           >
             A Platform for Influence. The Lab Leader is more than a mention; it is a gateway to a professional ecosystem:
             Global Recognition backed by a credible evaluation process, an elite network of pioneers, and exclusive digital showcases.

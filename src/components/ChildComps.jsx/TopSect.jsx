@@ -7,21 +7,24 @@ import { motion } from 'framer-motion'
 
 function TopSect() {
   return (
-    <main className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+    <main style={{fontFamily: {
+  sans: ["DINPro", "sans-serif"]},
+}}
+     className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
       
       {/* LEFT SIDE */}
       <section className="bg-[#1a193a] py-10 lg:py-14">
         <div className="relative z-10 max-w-6xl mx-auto m text-white px-6 sm:px-10 lg:px-16 flex flex-col justify-center gap-6 sm:gap-8">
 
           {/* Heading */}
-          <motion.h1
+          <motion.h1 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-left"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight text-left"
           >
-            Honoring Product Excellence in the Digital Age
+            HONORING PRODUCT EXCELLENCE IN THE DIGITAL AGE
           </motion.h1>
 
           {/* Description */}

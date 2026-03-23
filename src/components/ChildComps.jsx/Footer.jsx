@@ -4,7 +4,10 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 function Footer() {
   return (
-    <footer className="bg-[#1a193a] text-white px-4 sm:px-8 lg:px-20 py-12 sm:py-16">
+    <footer style={{fontFamily: {
+  sans: ["DINPro", "sans-serif"]},
+}}
+     className="bg-[#1a193a] text-white px-4 sm:px-8 lg:px-20 py-12 sm:py-16">
       
       <div className="flex flex-col md:flex-row justify-between gap-10">
 
@@ -58,7 +61,7 @@ function Footer() {
 
       </div>
 
-      {/* OPTIONAL BOTTOM TEXT */}
+    
       
 
     </footer>
