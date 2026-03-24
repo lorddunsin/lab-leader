@@ -41,7 +41,7 @@ function Mission() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide"
+          className="text-2xl sm:text-3xl md:text-[2.125rem;] font-[700] text-[#1a193a] tracking-wide"
         >
           ABOUT THE RECOGNITION
         </motion.h1>
@@ -49,7 +49,7 @@ function Mission() {
           A Digital Legacy of Innovation
         </span>
 
-        <div className="mt-6 space-y-4 mb- max-w-4xl mx-auto text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-medium text-center">
+        <div className="mt-6 space-y-4 mb- max-w-4xl mx-auto text-gray-700 text-sm sm:text-base md:text-lg lg:text-text-[1.125rem;] font-[400] text-center">
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,15 +88,15 @@ function Mission() {
 
 
 <div className='bg-white shadow-md'>
-  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a193a] tracking-wide bg-[#42b59d] p-7">OUR VISION</h1>
-  <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>To become a globally respected digital honor for product leadership, recognizing pioneers 
+  <h1  className="text-2xl sm:text-3xl md:text-[2.125rem] font-[700] text-[#1a193a] tracking-wide bg-[#42b59d] p-7">OUR VISION</h1>
+  <p className='text-sm sm:text-base md:text-lg lg:text-[1.125rem] font-[400] text-left p-10 text-[#1a193a]'>To become a globally respected digital honor for product leadership, recognizing pioneers 
 whose work improves lives across borders.</p>
 
 </div>
 
 <div className='bg-white shadow-md'>
-  <h1  className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide bg-[#1a193a] p-7">OUR MISSION </h1>
-   <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left p-10'>Celebrate: To honor visionary leaders shaping the future of products. 
+  <h1  className="text-2xl sm:text-3xl md:text-[2.125rem] font-[700] text-white tracking-wide bg-[#1a193a] p-7">OUR MISSION </h1>
+   <p className='text-sm sm:text-base md:text-lg lg:text-[1.125rem] font-[400] text-left p-10 text-[#1a193a]'>Celebrate: To honor visionary leaders shaping the future of products. 
 Promote: To champion innovation, integrity, and global collaboration. 
 Inspire: To provide a platform that ignites the next generation of creators. 
 Spotlight: To highlight leadership that balances growth with responsibility.</p>

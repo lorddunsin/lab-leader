@@ -7,22 +7,19 @@ import { motion } from 'framer-motion'
 
 function TopSect() {
   return (
-    <main style={{fontFamily: {
-  sans: ["DINPro", "sans-serif"]},
-}}
+    <main 
      className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
       
       {/* LEFT SIDE */}
       <section className="bg-[#1a193a] py-10 lg:py-14">
         <div className="relative z-10 max-w-6xl mx-auto m text-white px-6 sm:px-10 lg:px-16 flex flex-col justify-center gap-6 sm:gap-8">
-
           {/* Heading */}
           <motion.h1 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight text-left"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3rem] font-semibold leading-tight text-left"
           >
             HONORING PRODUCT EXCELLENCE IN THE DIGITAL AGE
           </motion.h1>
@@ -33,7 +30,7 @@ function TopSect() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-left"
+            className="text-sm sm:text-base md:text-lg lg:text-[1.25rem] font-[400] text-left"
           >
             The Lab Leader is a prestigious international recognition celebrating visionary creators
             whose pioneering work in product development has transformed industries and created
@@ -72,11 +69,11 @@ function TopSect() {
       </section>
 
       {/* RIGHT SIDE */}
-      <section className="bg-[#4ac2f0] min-h-[300px] flex items-center px-20 lg:min-h-full">
+      <section className="bg-[#4ac2f0] min-h-[300px] flex items-center justify-center px-20 lg:min-h-full">
          <img
           src="/bgimg4.png"
           alt="Logo"
-          // className="w-28 sm:w-32 md:w-36 cursor-pointer"
+          className="w-100"
         />
       
       </section>

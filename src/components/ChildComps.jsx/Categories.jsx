@@ -45,7 +45,7 @@ function Categories() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.15 }}
-        className="text-sm sm:text-base md:text-lg lg:text-xl text-[#1a193a] text-center mt-10 px-4 max-w-3xl mx-auto font-medium"
+        className="text-sm sm:text-base md:text-lg lg:text-xl text-[1.125rem text-center mt-10 px-4 max-w-3xl mx-auto font-[400]"
       >
         Each year, one outstanding recipient is highlighted in each of the following digital showcases
       </motion.p>
@@ -82,11 +82,11 @@ function Categories() {
 
 
 
-            <h1 className="text-lg sm:text-xl px-5 md:text-2xl  font-semibold">
+            <h1 className="text-lg sm:text-xl px-5 md:text-[1.5rem]  font-[700]">
               {item.title}
             </h1>
 
-            <p className="text-md  sm:text-lg px-5 mt-2 mb-10  md:text-xl">
+            <p className="text-md  sm:text-[1.125rem] px-5 mt-2 mb-10 font-[400] md:text-xl">
               {item.desc}
             </p>
 
@@ -96,7 +96,7 @@ function Categories() {
       </section>
 
       {/* ================= EVALUATION ================= */}
-      <section id="evaluation" className="grid  bg-gray-100 grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-8 px-4 sm:px-8 lg:px-15 py-30 mt-10 w-full">
+      <section id="evaluation" className="grid  bg-gray-100 grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-[75px] px-4 sm:px-8 lg:px-[70px] py-[96px] mt-10 w-full">
 <div className="col-span-2">
 
         <motion.h1
@@ -104,7 +104,7 @@ function Categories() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-2xl flex flex-col j md:text-3xl lg:text-[2.125rem] text-[#1a193a]  font-semibold "
+          className="text-2xl flex flex-col  md:text-3xl lg:text-[2.125rem] text-[#1a193a]  font-[700] "
           >
           SELECTION & EVALUATION
         </motion.h1>
@@ -118,7 +118,7 @@ function Categories() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="text-sm sm:text-xl md:text-[ 1.125rem] text-[#1a193a] mt-4  max-w-3xl "
+          className="text-sm sm:text-xl md:text-[ 1.125rem] text-[#1a193a] font-[400] mt-4  max-w-3xl "
           >
           Our recognition process is transparent and independent, focusing on four key pillars:
         </motion.p>
@@ -135,13 +135,13 @@ function Categories() {
           ].map((item, i) => (
             <div
               
-              className="flex flex-col  pr-5 py-5 pl-15 text-[#1a193a] space-y-3 transition bg-white border-1 border-[#c6c5ce]  "
+              className="flex flex-col  p-[16px] text-[#1a193a] space-y-3 transition bg-white border-1 border-[#c6c5ce]  "
             >
-              <h1 className="text-lg sm:text-xl mb-10 lg:text-[1.5rem] font-semibold">
+              <h1 className="text-lg sm:text-xl mb-[16px] lg:text-[1.5rem] font-[700]">
                 {item.title}
               </h1>
 
-              <p className="text-md sm:text-lg md:text-[ 1.125rem] mt-[-15px] mb-10">
+              <p className="text-md sm:text-lg md:text-[ 1.125rem]  font-[400] mb-10">
                 {item.desc}
               </p>
             </div>
@@ -157,14 +157,14 @@ function Categories() {
         {/* Overlay */}
         {/* <div className="absolute inset-0 bg-black/70"></div> */}
 
-        <div className="relative z-10 text-[#1a193a]  p-10 max-w-3xl  bg-white flex flex-col  ">
+        <div className="relative z-10 text-[#1a193a]  p-[24px] max-w-3xl  bg-white flex flex-col  ">
 
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-2xl md:text-3xl mb-5 lg:text-4xl font-semibold"
+            className="text-2xl md:text-3xl mb-5 lg:text-[2.125rem] font-[700]"
           >
             COMMUNITY & ENGAGEMENT
           </motion.h1>
@@ -174,7 +174,7 @@ function Categories() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="text-sm sm:text-md lg:text-xl mt-4 font-medium lg:w-130 leading-relaxed"
+            className="text-sm sm:text-md lg:text-[1.125rem] mt-4 font-[400] lg:w-130 leading-relaxed"
           >
             A Platform for Influence. The Lab Leader is more than a mention; it is a gateway to a professional ecosystem:
             Global Recognition backed by a credible evaluation process, an elite network of pioneers, and exclusive digital showcases.
