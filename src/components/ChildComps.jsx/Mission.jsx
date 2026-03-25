@@ -25,6 +25,7 @@ function Mission() {
     style={{fontFamily: {
   sans: ["DINPro", "sans-serif"]},
 }}
+id='about'
      className="flex flex-col w-full bg-gray-100 py-10 md:py-30 px-5 md:1px-0 lg:px-20 space-y-20">
 
       {/* Heading */}
@@ -34,7 +35,7 @@ function Mission() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         className="text-center px-5 sm:px-10 md:px-20 mt-10 mb-12"
-        id='about'
+        
       >
         <motion.h1
           initial={{ opacity: 0, y: 50 }}

@@ -5,9 +5,9 @@ import React, { useState } from 'react'
 
 const links = [
   { text: "Home", link: "/#" },
-  { text: "About", link: "/#about" },
-  { text: "Category", link: "/#categories" },
-  { text: "Contact", link: "/#contact" },
+  { text: "About", link: "#about" },
+  { text: "Category", link: "#categories" },
+  { text: "Contact", link: "#contact" },
 ]
 
 function Navbar() {

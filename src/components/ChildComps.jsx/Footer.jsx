@@ -34,7 +34,7 @@ function Footer() {
 
           <ul className="flex gap-4 sm:gap-6 text-[#4ac2f0]">
             <li>
-              <a href="#" className="hover:scale-110 transition">
+              <a href="mailto:info@thelableader.org" className="hover:scale-110 transition">
                 <MdOutlineMailOutline className="text-2xl sm:text-3xl md:text-4xl" />
               </a>
             </li>

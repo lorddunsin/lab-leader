@@ -26,6 +26,7 @@ function Categories() {
     <section style={{fontFamily: {
   sans: ["DINPro", "sans-serif"]},
 }}
+id="categories"
      className=" pt-16 sm:pt-20 lg:pt-35">
 
       {/* ================= HEADER ================= */}
@@ -34,7 +35,7 @@ function Categories() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        id="categories"
+        
         className="text-2xl md:text-3xl lg:text-4xl text-[#1a193a] text-center font-semibold px-4"
       >
         RECOGNITION CATEGORIES
